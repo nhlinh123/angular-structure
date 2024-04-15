@@ -7,6 +7,12 @@ import { IPageTodo } from '../interfaces/todo.interface';
 export class TodoPageService implements IPageTodo {
   todos: { [key: string]: string; }[] = [];
 
+  constructor(
+    //@Inject(TODO_API_SERVICE) protected todoApiService: ITodoApiService
+  ) {
+
+  }
+
   addTodo(): void {
     throw new Error('Method not implemented.');
   }
